@@ -1,0 +1,156 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'gui_add_component.ui'
+#
+# Created by: PyQt5 UI code generator 5.15.10
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+import gui_utils
+
+class Ui_addComponentWindow(object):
+    def setupUi(self, addComponentWindow):
+        addComponentWindow.setObjectName("addComponentWindow")
+        addComponentWindow.resize(600, 200)
+        addComponentWindow.setMinimumSize(QtCore.QSize(600, 200))
+        addComponentWindow.setMaximumSize(QtCore.QSize(600, 200))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../images/rikor_ico.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        addComponentWindow.setWindowIcon(icon)
+        self.centralwidget = QtWidgets.QWidget(addComponentWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.nameLine = QtWidgets.QLineEdit(self.centralwidget)
+        self.nameLine.setGeometry(QtCore.QRect(10, 30, 180, 31))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.nameLine.setFont(font)
+        self.nameLine.setObjectName("nameLine")
+        self.typeBox = QtWidgets.QComboBox(self.centralwidget)
+        self.typeBox.setGeometry(QtCore.QRect(210, 30, 180, 31))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.typeBox.setFont(font)
+        self.typeBox.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.typeBox.setEditable(False)
+        self.typeBox.setInsertPolicy(QtWidgets.QComboBox.InsertAtBottom)
+        self.typeBox.setObjectName("typeBox")
+        self.typeBox.addItem("")
+        self.typeBox.addItem("")
+        self.typeBox.addItem("")
+        self.typeBox.addItem("")
+        self.countLine = QtWidgets.QLineEdit(self.centralwidget)
+        self.countLine.setGeometry(QtCore.QRect(549, 30, 41, 31))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.countLine.setFont(font)
+        self.countLine.setObjectName("countLine")
+        self.countSlider = QtWidgets.QSlider(self.centralwidget)
+        self.countSlider.setGeometry(QtCore.QRect(410, 35, 121, 22))
+        self.countSlider.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.countSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.countSlider.setObjectName("countSlider")
+        self.nameLabel = QtWidgets.QLabel(self.centralwidget)
+        self.nameLabel.setGeometry(QtCore.QRect(10, 5, 181, 20))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.nameLabel.setFont(font)
+        self.nameLabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.nameLabel.setObjectName("nameLabel")
+        self.typeLabel = QtWidgets.QLabel(self.centralwidget)
+        self.typeLabel.setGeometry(QtCore.QRect(210, 5, 181, 20))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.typeLabel.setFont(font)
+        self.typeLabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.typeLabel.setObjectName("typeLabel")
+        self.countLabel = QtWidgets.QLabel(self.centralwidget)
+        self.countLabel.setGeometry(QtCore.QRect(410, 5, 181, 20))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.countLabel.setFont(font)
+        self.countLabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.countLabel.setObjectName("countLabel")
+        self.bgImageLabel = QtWidgets.QLabel(self.centralwidget)
+        self.bgImageLabel.setGeometry(QtCore.QRect(0, 0, 600, 200))
+        self.bgImageLabel.setStyleSheet("background-image: url(:/image 600x200/main_bg_600x200.jpg);")
+        self.bgImageLabel.setText("")
+        self.bgImageLabel.setObjectName("bgImageLabel")
+        self.addButton = QtWidgets.QPushButton(self.centralwidget)
+        self.addButton.setGeometry(QtCore.QRect(450, 150, 141, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(8)
+        self.addButton.setFont(font)
+        self.addButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.addButton.setStyleSheet("background-color: rgb(220, 220, 220);")
+        self.addButton.setObjectName("addButton")
+        self.cancelButton = QtWidgets.QPushButton(self.centralwidget)
+        self.cancelButton.setGeometry(QtCore.QRect(300, 150, 141, 41))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(8)
+        self.cancelButton.setFont(font)
+        self.cancelButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.cancelButton.setStyleSheet("background-color: rgb(220, 220, 220);")
+        self.cancelButton.setObjectName("cancelButton")
+        self.logoLabel = QtWidgets.QLabel(self.centralwidget)
+        self.logoLabel.setGeometry(QtCore.QRect(5, 95, 280, 100))
+        self.logoLabel.setStyleSheet("background-image: url(:/logoImage/rikor_logo_280x100.png);")
+        self.logoLabel.setText("")
+        self.logoLabel.setObjectName("logoLabel")
+        self.bgImageLabel.raise_()
+        self.nameLine.raise_()
+        self.typeBox.raise_()
+        self.countLine.raise_()
+        self.countSlider.raise_()
+        self.nameLabel.raise_()
+        self.typeLabel.raise_()
+        self.countLabel.raise_()
+        self.addButton.raise_()
+        self.cancelButton.raise_()
+        self.logoLabel.raise_()
+        addComponentWindow.setCentralWidget(self.centralwidget)
+
+        self.addButton.clicked.connect(self.addComponent)
+        self.countSlider.valueChanged.connect(self.changeSliderValue)
+        self.countLine.textChanged.connect(self.changeLineValue)
+        self.nameLine.textChanged.connect(self.changeComponentNameValue)
+        self.cancelButton.clicked.connect(addComponentWindow.close)
+        self.countLine.setText('1')
+
+        self.retranslateUi(addComponentWindow)
+        QtCore.QMetaObject.connectSlotsByName(addComponentWindow)
+
+    def retranslateUi(self, addComponentWindow):
+        _translate = QtCore.QCoreApplication.translate
+        addComponentWindow.setWindowTitle(_translate("addComponentWindow", "Добавить комплектующие"))
+        self.typeBox.setItemText(0, _translate("addComponentWindow", "процессор"))
+        self.typeBox.setItemText(1, _translate("addComponentWindow", "видеокарта"))
+        self.typeBox.setItemText(2, _translate("addComponentWindow", "ОЗУ"))
+        self.typeBox.setItemText(3, _translate("addComponentWindow", "хранилище"))
+        self.nameLabel.setText(_translate("addComponentWindow", "имя"))
+        self.typeLabel.setText(_translate("addComponentWindow", "тип"))
+        self.countLabel.setText(_translate("addComponentWindow", "количество"))
+        self.addButton.setText(_translate("addComponentWindow", "Добавить"))
+        self.cancelButton.setText(_translate("addComponentWindow", "Отмена"))
+
+    def clearFields(self):
+        self.nameLine.setText("")
+        self.countSlider.setValue(0)
+
+    changeSliderValue = gui_utils.changeSliderValue
+    changeLineValue = gui_utils.changeLineValue
+    addComponent = gui_utils.addComponent
+    changeComponentNameValue = gui_utils.changeComponentNameValue
+    message = gui_utils.message
+
+    def __init__(self, data):
+        self.data = data
+
+import main_bg_600x200_rc
+import rikor_logo_280x100_rc
